@@ -41,10 +41,10 @@ export const CustomNavbar = ({ loggedIn, setLoggedIn }) => {
                 </Navbar.Toggle>
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link href="/">Home</Nav.Link>
-                        <Nav.Link href="/dashboard">Dashboard</Nav.Link>
-                        <Nav.Link href="/flights">Find Flights</Nav.Link>
-                        <Nav.Link href="/hotels">Find Hotels</Nav.Link>
+                        <Nav.Link as={Link} to="/">Home</Nav.Link>
+                        <Nav.Link as={Link} to="/dashboard">Dashboard</Nav.Link>
+                        <Nav.Link as={Link} to="/flights">Find Flights</Nav.Link>
+                        <Nav.Link as={Link} to="/hotels">Find Hotels</Nav.Link>
                     </Nav>
                     <Form className="d-flex align-items-center">
                         {loggedIn ? (
